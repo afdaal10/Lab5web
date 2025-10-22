@@ -25,6 +25,8 @@
 - File `eksternal.js` berisi kode program JavaScript eksternal.  
 - File `README.md` digunakan untuk laporan hasil praktikum.
 
+## Tampilan Awal
+
 ![Screenshot awal - Afdal Agislam](tampilan_awal.png)
 
 ---
@@ -191,6 +193,8 @@ Fungsinya adalah memeriksa isian form sebelum dikirim ke server.
 - Jika data benar → tampil pesan hijau (valid).
 #### Kesimpulan:
 Script validasi ini memastikan input pengguna sudah sesuai dan menampilkan pesan konfirmasi dengan nama Afdal Agislam sebagai pembuatnya.
+
+## Tampilan Akhir
 
 ![Screenshot akhir - Afdal Agislam](tampilan_akhir.png)
 
