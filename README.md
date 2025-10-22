@@ -7,7 +7,7 @@
 
 ---
 
-## 🎯 Tujuan Praktikum
+##  Tujuan Praktikum
 1. Mempelajari dasar-dasar penggunaan **JavaScript** pada halaman web.  
 2. Menerapkan JavaScript untuk menampilkan **output**, membuat **interaksi pengguna**, serta **memanipulasi elemen HTML (DOM)**.  
 3. Menerapkan **logika, kondisi, dan perhitungan** dalam JavaScript.  
@@ -46,6 +46,8 @@ document.getElementById("docwrite-target").innerHTML = "<strong>Halo, saya Afdal
 console.log("Hello World dari Afdal Agislam");
 ```
 Menampilkan teks di halaman dan menulis pesan di console browser.
+
+![Output halaman - Afdal Agislam](halaman.png)
 
 ### b. Membuat alert, prompt, dan confirm
 ```html
