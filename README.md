@@ -116,4 +116,63 @@ Kesalahan input oleh Afdal Agislam:
 ```scss
 Data valid! Terima kasih, Afdal Agislam. (Divalidasi oleh Afdal Agislam)
 ```
+### f. Checkbox otomatis (Perhitungan)
+Menjumlahkan harga barang yang dicentang:
+```html
+const items = document.querySelectorAll(".item");
+function hitungTotal() {
+  let total = 0;
+  items.forEach(i => { if (i.checked) total += Number(i.dataset.price); });
+  document.getElementById("total-harga").textContent = total.toLocaleString("id-ID");
+}
+```
+Hasil total langsung berubah setiap kali checkbox dicentang atau dilepas.
+
+### g. Manipulasi DOM
+Mengubah teks HTML secara dinamis:
+```html
+document.getElementById("demo-text").textContent =
+  `Teks ini telah diubah oleh Afdal Agislam pada ${new Date().toLocaleString()}`;
+```
+Saat tombol ditekan, teks berubah secara otomatis.
+
+## 4. Menjalankan File di Browser
+- Jalankan file lab5_javascript.html di browser (klik dua kali atau pakai VSCode Live Server).
+- Uji semua fitur:
+ - Alert / Prompt / Confirm
+ - Aritmatika
+ - Switch Hari
+ - Validasi Form
+ - Checkbox Perhitungan
+ - Manipulasi Teks DOM
+
+## 5. Validasi HTML
+Gunakan validator.w3.org
+ untuk memeriksa apakah struktur HTML valid.
+
+### Hasil Praktikum
+| No | Percobaan                | Hasil di Browser                                    |
+| -- | ------------------------ | --------------------------------------------------- |
+| 1  | Output & Console         | Teks “Halo, saya Afdal Agislam!” dan log di console |
+| 2  | Alert / Prompt / Confirm | Muncul pop-up interaktif                            |
+| 3  | Aritmatika               | Hasil operasi muncul di bawah tombol “Hitung”       |
+| 4  | Switch Hari              | Menampilkan teks sesuai pilihan                     |
+| 5  | Validasi Form            | Menampilkan pesan error atau sukses                 |
+| 6  | Checkbox                 | Total harga otomatis berubah                        |
+| 7  | Manipulasi DOM           | Paragraf berubah teks dan menampilkan waktu         |
+```
+```
+## Pertanyaan dan Tugas
+### 1. Buat script untuk melakukan validasi pada isian form.
+#### Jawaban:
+Script validasi form terdapat pada bagian ke-5️⃣ di file eksternal.js.
+Fungsinya adalah memeriksa isian form sebelum dikirim ke server.
+- Nama minimal 3 karakter
+- Email harus mengandung “@” dan “.”
+- Umur harus angka 1–120
+#### Hasil:
+- Jika data salah → tampil pesan merah (kesalahan).
+- Jika data benar → tampil pesan hijau (valid).
+#### Kesimpulan:
+Script validasi ini memastikan input pengguna sudah sesuai dan menampilkan pesan konfirmasi dengan nama Afdal Agislam sebagai pembuatnya.
 
