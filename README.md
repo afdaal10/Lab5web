@@ -25,6 +25,8 @@
 - File `eksternal.js` berisi kode program JavaScript eksternal.  
 - File `README.md` digunakan untuk laporan hasil praktikum.
 
+![Screenshot awal - Afdal Agislam](tampilan_awal.png)
+
 ---
 
 ## 2. Membuat File HTML Dasar
@@ -73,6 +75,8 @@ const hasil = a + b;
 Jika jumlah genap → tampilkan “jumlah genap”
 Jika ganjil → tampilkan “jumlah ganjil”.
 
+![Screenshot aritmatika - Afdal Agislam](aritmatika.png)
+
 ### d. Percabangan menggunakan switch
 ```html
 switch (val) {
@@ -84,6 +88,8 @@ switch (val) {
 }
 ```
 Menampilkan teks hari sesuai dengan pilihan pengguna.
+
+![Screenshot switch - Afdal Agislam](switch.png)
 
 ### e. Validasi Form Input (Tugas Praktikum)
 Bagian ini berfungsi untuk mengecek apakah pengguna sudah mengisi form dengan benar.
@@ -120,6 +126,8 @@ Kesalahan input oleh Afdal Agislam:
 ```scss
 Data valid! Terima kasih, Afdal Agislam. (Divalidasi oleh Afdal Agislam)
 ```
+![Screenshot form validasi - Afdal Agislam](form_validasi.png)
+
 ### f. Checkbox otomatis (Perhitungan)
 Menjumlahkan harga barang yang dicentang:
 ```html
@@ -132,6 +140,8 @@ function hitungTotal() {
 ```
 Hasil total langsung berubah setiap kali checkbox dicentang atau dilepas.
 
+![Screenshot checkbox - Afdal Agislam](checkbox.png)
+
 ### g. Manipulasi DOM
 Mengubah teks HTML secara dinamis:
 ```html
@@ -139,6 +149,8 @@ document.getElementById("demo-text").textContent =
   `Teks ini telah diubah oleh Afdal Agislam pada ${new Date().toLocaleString()}`;
 ```
 Saat tombol ditekan, teks berubah secara otomatis.
+
+![Screenshot manipulasi dom - Afdal Agislam](manipulasi_dom.png)
 
 ## 4. Menjalankan File di Browser
 - Jalankan file lab5_javascript.html di browser (klik dua kali atau pakai VSCode Live Server).
@@ -179,6 +191,8 @@ Fungsinya adalah memeriksa isian form sebelum dikirim ke server.
 - Jika data benar → tampil pesan hijau (valid).
 #### Kesimpulan:
 Script validasi ini memastikan input pengguna sudah sesuai dan menampilkan pesan konfirmasi dengan nama Afdal Agislam sebagai pembuatnya.
+
+![Screenshot akhir - Afdal Agislam](tampilan_akhir.png)
 
 ## Kesimpulan
 
