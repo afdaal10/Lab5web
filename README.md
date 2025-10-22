@@ -61,6 +61,8 @@ const yakin = confirm("Apakah Anda yakin, Afdal Agislam?");
 - prompt() → meminta input dari pengguna.
 - confirm() → memberikan pilihan OK atau Cancel.
 
+![Screenshot alert - Afdal Agislam](alert.png)
+
 ### c. Operasi aritmatika dan kondisi
 ```html
 const a = Number(document.getElementById("angkaA").value);
