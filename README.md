@@ -176,3 +176,18 @@ Fungsinya adalah memeriksa isian form sebelum dikirim ke server.
 #### Kesimpulan:
 Script validasi ini memastikan input pengguna sudah sesuai dan menampilkan pesan konfirmasi dengan nama Afdal Agislam sebagai pembuatnya.
 
+## Kesimpulan
+
+#### 1. JavaScript memungkinkan halaman web menjadi interaktif dan dinamis.
+#### 2. Dengan file eksternal (eksternal.js), kode menjadi lebih rapi dan mudah dikelola.
+#### 3. Praktikum ini berhasil menunjukkan penggunaan:
+- alert, prompt, confirm
+- Operasi aritmatika dan kondisi
+- Struktur switch
+- Validasi form input
+- Manipulasi elemen DOM
+- Checkbox perhitungan otomatis
+#### 4. Semua fitur telah diuji dan berfungsi dengan baik.
+#### 5.Hasil validasi menampilkan pesan personal:
+## “Divalidasi oleh Afdal Agislam.”
+
