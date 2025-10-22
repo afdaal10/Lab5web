@@ -17,7 +17,7 @@
 
 ##  Langkah-Langkah Praktikum
 
-### 1. Persiapan Folder dan File
+## 1. Persiapan Folder dan File
 - Buat folder baru bernama **`lab5_javascript`**.  
 - Di dalam folder tersebut buat tiga file utama:
 
@@ -27,7 +27,7 @@
 
 ---
 
-### 2. Membuat File HTML Dasar
+## 2. Membuat File HTML Dasar
 Tambahkan kode HTML utama dan hubungkan dengan file JavaScript eksternal menggunakan:
 ```html
 <script src="eksternal.js" defer></script>
@@ -37,7 +37,7 @@ Tambahkan kode HTML utama dan hubungkan dengan file JavaScript eksternal menggun
 Input, Button, dan Select untuk interaksi pengguna.
 Div atau Paragraph untuk menampilkan hasil dari JavaScript.
 
-### 3. Menambahkan Script JavaScript Eksternal
+## 3. Menambahkan Script JavaScript Eksternal
 Buat file eksternal.js yang berisi berbagai contoh penerapan JavaScript berikut:
 
 ### a. Menampilkan output di halaman
@@ -58,3 +58,62 @@ const yakin = confirm("Apakah Anda yakin, Afdal Agislam?");
 - alert() → menampilkan pesan pop-up.
 - prompt() → meminta input dari pengguna.
 - confirm() → memberikan pilihan OK atau Cancel.
+
+### c. Operasi aritmatika dan kondisi
+```html
+const a = Number(document.getElementById("angkaA").value);
+const b = Number(document.getElementById("angkaB").value);
+const hasil = a + b;
+```
+### Hasilnya ditampilkan di halaman, dengan tambahan kondisi:
+Jika jumlah genap → tampilkan “jumlah genap”
+Jika ganjil → tampilkan “jumlah ganjil”.
+
+### d. Percabangan menggunakan switch
+```html
+switch (val) {
+  case "1": hasil = "Senin - Semangat baru dari Afdal Agislam!"; break;
+  case "2": hasil = "Selasa - Tetap produktif 💪"; break;
+  case "3": hasil = "Rabu - Tetap fokus belajar"; break;
+  case "4": hasil = "Kamis - Jangan lupa istirahat"; break;
+  case "5": hasil = "Jumat - Hari penuh berkah"; break;
+}
+```
+Menampilkan teks hari sesuai dengan pilihan pengguna.
+
+### e. Validasi Form Input (Tugas Praktikum)
+Bagian ini berfungsi untuk mengecek apakah pengguna sudah mengisi form dengan benar.
+```html
+const form = document.getElementById("form-sample");
+form.addEventListener("submit", function (ev) {
+  ev.preventDefault();
+  const nama = document.getElementById("nama").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const umur = Number(document.getElementById("umur").value);
+  const result = document.getElementById("form-result");
+  const errors = [];
+
+  if (nama.length < 3) errors.push("Nama minimal 3 karakter.");
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) errors.push("Format email tidak valid.");
+  if (!Number.isInteger(umur) || umur <= 0 || umur > 120) errors.push("Umur harus antara 1–120.");
+
+  if (errors.length > 0) {
+    result.style.color = "red";
+    result.innerHTML = "Kesalahan input oleh Afdal Agislam:<br> - " + errors.join("<br> - ");
+  } else {
+    result.style.color = "green";
+    result.textContent = `Data valid! Terima kasih, ${nama}. (Divalidasi oleh Afdal Agislam)`;
+  }
+});
+```
+### Hasil Validasi:
+- Jika salah → Pesan merah:
+```css
+Kesalahan input oleh Afdal Agislam:
+- Format email tidak valid.
+```
+- Jika benar → Pesan hijau:
+```scss
+Data valid! Terima kasih, Afdal Agislam. (Divalidasi oleh Afdal Agislam)
+```
+
